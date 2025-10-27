@@ -23,7 +23,7 @@ const square = () => {
 
 // cube
 const cube=()=>{
-    input.value=input.value * input.value * input.value;
+    input.value=input.value ** 3;
 }
 
 const Result = () => {
