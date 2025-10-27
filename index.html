@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <!-- bootstrap link -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <!-- external style link -->
+    <link rel="stylesheet" href="./style.css">
+    <!-- favicon link -->
+    <link rel="shortcut icon" href="./favicon-calc.png" type="image/x-icon">
+</head>
+
+<body>
+
+    <div class="container-fluid">
+        <div class="container">
+            <input type="text" name="input" id="input" placeholder="0">
+            <div class="second-div">
+                <div class="calc-section d-flex flex-column justify-content-center align-items-center gap-4 mt-5">
+
+                    <div class="d-flex gap-4 mt-5">
+                        <button onclick="displayNumber('7')" class="btn btn-dark calc-btn">7</button>
+                        <button onclick="displayNumber('8')" class="btn btn-dark calc-btn">8</button>
+                        <button onclick="displayNumber('9')" class="btn btn-dark calc-btn">9</button>
+                        <button onclick="displayNumber('/')"
+                            class="btn btn-light rounded-circle text-danger fw-bold calc-btn">/</button>
+                    </div>
+
+                    <div class="d-flex gap-4 mt-3">
+                        <button onclick="displayNumber('4')" class="btn btn-dark calc-btn">4</button>
+                        <button onclick="displayNumber('5')" class="btn btn-dark calc-btn">5</button>
+                        <button onclick="displayNumber('6')" class="btn btn-dark calc-btn">6</button>
+                        <button onclick="displayNumber('*')"
+                            class="btn btn-light rounded-circle text-danger fw-bold  calc-btn">*</button>
+                    </div>
+
+                    <div class="d-flex gap-4">
+                        <button onclick="displayNumber('1')" class="btn btn-dark calc-btn">1</button>
+                        <button onclick="displayNumber('2')" class="btn btn-dark calc-btn">2</button>
+                        <button onclick="displayNumber('3')" class="btn btn-dark calc-btn">3</button>
+                        <button onclick="displayNumber('-')"
+                            class="btn btn-light  rounded-circle text-danger fw-bold calc-btn">-</button>
+                    </div>
+
+                    <div class="d-flex gap-4">
+                        <button onclick="displayNumber('0')" class="btn btn-dark calc-btn">0</button>
+                        <button onclick="displayNumber('+')"
+                            class="btn btn-light rounded-circle text-danger fw-bold calc-btn">+</button>
+                        <button onclick="Result()" class="btn btn-danger calc-btn">=</button>
+                        <button onclick="reset()"
+                            class="btn btn-light  rounded-circle text-danger fw-bold  calc-btn">C</button>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+
+
+
+
+
+
+
+    <!-- external script link -->
+    <script src="./script.js"></script>
+    <!-- bootstrap script link -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
