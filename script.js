@@ -16,8 +16,17 @@ const reset = () => {
 
 }
 
+// square
+const square = () => {
+    input.value = input.value * input.value;
+}
+
+// cube
+const cube=()=>{
+    input.value=input.value * input.value * input.value;
+}
 
 const Result = () => {
     // eval() function takes string and performs operation like *,/,+,-
-    input.value = eval(input.value)
+    input.value=eval(input.value)
 }
